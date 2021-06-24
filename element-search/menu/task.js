@@ -9,6 +9,8 @@ function showMenu() {
 
   if (menu_active !== null) {
     menu_active.classList.toggle('menu_active');
+    
+    if(this.nextElementSibling) return false;
   }
 
   if (menu_active !== this.nextElementSibling) {
